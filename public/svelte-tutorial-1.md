@@ -143,6 +143,9 @@ npm run dev
 <style>
 	/* root layout style */
 	main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: 100vh;
 	}
@@ -165,6 +168,17 @@ npm run dev
 		text-align: center;
 	}
 </style>
+```
+
+```css:src/styles.css
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+}
+
 ```
 
 </details>
