@@ -7,7 +7,7 @@ tags:
   - SvelteKit
   - Tutoial
 private: false
-updated_at: "2023-12-04T13:26:35+09:00"
+updated_at: '2023-12-04T22:45:07+09:00'
 id: 6de543a495770a51956f
 organization_url_name: null
 slide: false
