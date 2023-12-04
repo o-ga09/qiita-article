@@ -7,18 +7,17 @@ tags:
   - Se
   - ハマリポイント
 private: false
-updated_at: "2021-05-15T19:08:49+09:00"
+updated_at: '2021-05-15T19:08:49+09:00'
 id: c2ff5bbff7d76d4eace2
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
-
 ##自己紹介
-SE です。
+SEです。
 
-趣味の範囲で Golang に入門したので環境構築から詰まった所を備忘録として忘れないようにしておくために投稿しました。
-Qiita 初投稿なので生暖かい目で見てください。
+趣味の範囲でGolangに入門したので環境構築から詰まった所を備忘録として忘れないようにしておくために投稿しました。
+Qiita初投稿なので生暖かい目で見てください。
 アウトプットとしてこれからどんどん投稿していきたいと思っています。
 
 ##環境
@@ -38,35 +37,35 @@ https://code.visualstudio.com/download
 
 https://golang.org/doc/install
 
-ついでに、vscode も「vscode インストール」 と検索して流れで Go の拡張機能もインストール!!!
+ついでに、vscodeも「vscode インストール」 と検索して流れでGoの拡張機能もインストール!!!
 
-Golang のインストールを確認する。
+Golangのインストールを確認する。
 
-```
+~~~
 $go version
 go version go1.16rc1 darwin/arm64
 $
-```
+~~~
 
-とプロンプトが帰って来れば OK!!!
+とプロンプトが帰って来ればOK!!!
 
-まぁ、ここまで来ればインストールは完了だけど、一応 GOROOT と GOPATH を
+まぁ、ここまで来ればインストールは完了だけど、一応GOROOT と GOPATHを
 確認する。
 
 GOROOT
 
-```
+~~~
 $ls -l /usr/local/
 total 0
 drwxr-xr-x  19 root  wheel  608  5  9 11:45 bin
 drwxr-xr-x  20 root  wheel  640  1 28 07:22 go ←goのディレクトリが存在する
 drwxr-xr-x   3 root  wheel   96  5  9 11:45 lib
 $
-```
+~~~
 
 GOPATH
 
-```
+~~~
 $ls -l /Users/xxxxx/
 total 441632
 drwx------@  3 xxxxx  staff         96  1 31 18:08 Applications
@@ -85,68 +84,68 @@ drwxr-xr-x   5 xxxxx  staff        160  3 14 19:12 go　　　　←goのディ�
 drwxr-xr-x  21 xxxxx  staff        672  4 12 20:49 google-cloud-sdk
 -rw-r--r--@  1 xxxxx  staff   87698261  2  8 22:32 google-cloud-sdk-324.0.0-darwin-x86_64.tar.gz
 $
-```
+~~~
 
 最後に、環境変数を確認する。
 
-```
+~~~
 $env
 GOROOT=/usr/local/go
 GOPATH=/Users/xxxxx/go/
 (他は省略)
 $
-```
+~~~
 
-###<font color="Red">⭐️ 個人的に最大のハマりポイント 🌟</font>
+###<font color="Red">⭐️個人的に最大のハマりポイント🌟</font>
 
-GOPATH(/Users/xxxxx/go)以外に作業ディレクトリを作成して Golang を書きたい場合、以下を設定すること。
+GOPATH(/Users/xxxxx/go)以外に作業ディレクトリを作成してGolangを書きたい場合、以下を設定すること。
 
-```
+~~~
 $go env GO111MODULE="on"
 $go env
 GO111MODULE="on"　←ここを"on"にすること！！！
 (他は省略)
-```
+~~~
 
 【理由】
 
-上記が on になっていない場合及び作業ディレクトリが GOPATH 以外である場合
+上記がonになっていない場合及び作業ディレクトリがGOPATH以外である場合
 
-パッケージをインポートした際に GOPATH 配下もしくは GOROOT 配下を探しに行くため作業ディレクトリが GOPATH 配下以外だとパッケージが見つからなくてエラーになるため。
+パッケージをインポートした際にGOPATH配下もしくはGOROOT配下を探しに行くため作業ディレクトリがGOPATH配下以外だとパッケージが見つからなくてエラーになるため。
 
-**_!!!環境構築完了!!!_**
+***!!!環境構築完了!!!***
 
-##Go で HelloWorld!!!
+##GoでHelloWorld!!!
 
 !!!作業ディレクトリの構成は以下!!!
 
-```
+~~~
 $tree /Users/xxxxx/Desktop/golang_20210207
 |--go.mod
 |--go.sum
-|--main
+|--main            
 |--main.go
 $
-```
+~~~
 
 【手順】
 
 1. 任意の場所にディレクトリを作成する。
 2. 以下のコマンドにて、モジュールを作成
 
-```
+~~~
 $go mod init
-```
+~~~
 
 3.(任意)デフォルトにないパッケージを使う場合は、以下のコマンドを実行する(今回は省略)
 
-```
+~~~
 $go get "[パッケージのURL]"
-```
+~~~
 
 4.ソースコードを編集する
 
-```go:hello.go
+~~~go:hello.go
 package main
 
 import (
@@ -157,20 +156,20 @@ func main() {
     fmt.Println("HelloWorld!")
 }
 
-```
+~~~
 
 5.コードを実行
 
-```
+~~~
 $go build hello.go
 $./hello
 HelloWorld!
 $
-```
+~~~
 
-**_完了_**
+***完了***
 
-##これから Golang で作りたいもの
+##これからGolangで作りたいもの
 
 - OCR で画像認識を使ってレシートから文字を読み取って家計簿集計アプリ
 - LINE チャットボット　(クソアプリ版)
@@ -186,3 +185,19 @@ $
 これから投稿していきたい記事としては、DB、OS,ネットワーク,クラウドあたりと考えています。
 
 主に個人用ですが、読んだ方の参考になれば幸いです。
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

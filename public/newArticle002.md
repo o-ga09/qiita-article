@@ -1,17 +1,17 @@
 ---
 title: 【完成編】モンハンAPI作ってみた
 tags:
-  - "Go"
-  - "RESTAPI"
-  - "モンハン20th"
-  - "アドベントカレンダー2023"
-  - "個人開発"
+  - Go
+  - RestAPI
+  - 個人開発
+  - アドベントカレンダー2023
+  - モンハン20th
 private: true
-updated_at: ""
-id: null
+updated_at: '2023-12-04T13:17:58+09:00'
+id: 797ae0ed47674a8103db
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 :::note info

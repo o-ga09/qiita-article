@@ -3,20 +3,19 @@ title: メールアドレスマスク化CLIツールを作ったのでメモ
 tags:
   - Go
   - mail
-  - cli
+  - CLI
   - automation
   - masking
 private: false
-updated_at: "2023-02-23T19:44:23+09:00"
+updated_at: '2023-02-23T19:44:23+09:00'
 id: fe6e50affca4488de3ae
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
-
 ### 背景
 
-マーケティングのシステムの保守をしていたときにメールアドレスをマスク化して外部の関係者に連携するというタスクがあったので、CLI ツール作ってみようかなと思ったため。
+マーケティングのシステムの保守をしていたときにメールアドレスをマスク化して外部の関係者に連携するというタスクがあったので、CLIツール作ってみようかなと思ったため。
 
 ### ツールを作成した目的
 
@@ -32,7 +31,7 @@ ignorePublish: true
 
 ３.以下のコマンド実行する
 
-注意　[対象フォルダ名] の後ろにスラッシュ(/)はなし
+注意　[対象フォルダ名]  の後ろにスラッシュ(/)はなし
 
 ```bash
 cd [ダウンロードしたディレクトリ]
@@ -60,4 +59,6 @@ addressMASK.exe [対象フォルダ名]
 
 ソースはこちら
 
+
 https://github.com/o-ga09/GolangCLI_addressMASK
+

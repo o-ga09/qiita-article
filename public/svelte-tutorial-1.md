@@ -1,14 +1,14 @@
 ---
-title: "Re : 1からはじめるSvelte入門【part 1】"
+title: Re ： 1からはじめるSvelte入門【part 1】
 tags:
-  - Svelte
-  - Svelte Kit
-  - Frontend
   - Web
+  - フロントエンド
+  - Svelte
+  - SvelteKit
   - Tutoial
 private: false
-updated_at: ""
-id: null
+updated_at: '2023-12-04T13:26:35+09:00'
+id: 6de543a495770a51956f
 organization_url_name: null
 slide: false
 ignorePublish: false
