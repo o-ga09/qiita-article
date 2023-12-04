@@ -7,7 +7,7 @@ tags:
   - SvelteKit
   - Tutoial
 private: false
-updated_at: '2023-12-04T13:26:35+09:00'
+updated_at: "2023-12-04T13:26:35+09:00"
 id: 6de543a495770a51956f
 organization_url_name: null
 slide: false
@@ -91,7 +91,7 @@ Web アプリを作る際に、必要な UI コンポーネントを作成する
 
 ### 成果物
 
-![スクリーンショット 2023-12-04 8.30.16.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1312905/40529bc4-1aef-5fa5-7ce0-e9c5d47e0c00.png)
+![スクリーンショット 2023-12-04 22.30.27.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1312905/d24b7b49-daf9-71bd-4ffe-d553a8b953ce.png)
 
 ### 使用する構成
 
