@@ -11,7 +11,7 @@ updated_at: ""
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 # はじめに
@@ -102,18 +102,70 @@ Web アプリを作る際に、必要な UI コンポーネントを作成する
 
 <details><summary>解説を見る</summary>
 
-1. Svelte プロジェクトを作成する
+1 . Svelte プロジェクトを作成する
 
 ```bash
-npm create svelte@latest my-app
-cd my-app
+npm create svelte@latest [好きなプロジェクト名]
+cd [プロジェクト名]
 npm install
+```
+
+<br>
+
+2 . 一度、公式が用意したサンプルが動作するか確認する
+
+```bash
 npm run dev
 ```
 
-2. 一度、公式が用意したサンプルが動作するか確認する
-3. 不要なファイル削除する
-4. Hello World を書く
+<br>
+
+3 . 不要なファイル削除する
+
+- about ディレクトリ
+- sverdle ディレクトリ
+- src/Counter.svelte
+
+<br>
+
+4 . Hello World を書く
+
+```html:src/routes/+layout.svelte
+<script>
+</script>
+
+<div class="app">
+	<main>
+		<slot />
+	</main>
+</div>
+
+<style>
+	/* root layout style */
+	main {
+		width: 100%;
+		height: 100vh;
+	}
+</style>
+```
+
+```html:src/routes/+page.svelte
+<script>
+</script>
+
+<svelte:head>
+	<title>Home</title>
+	<meta name="description" content="Svelte demo app" />
+</svelte:head>
+
+<h1>Hello World !</h1>
+
+<style>
+	h1 {
+		text-align: center;
+	}
+</style>
+```
 
 </details>
 
