@@ -5,7 +5,7 @@ tags:
   - 個人開発
   - クソアプリ
 private: true
-updated_at: '2023-12-05T07:33:26+09:00'
+updated_at: '2023-12-05T07:56:48+09:00'
 id: e7fc8fc017698c4dda80
 organization_url_name: null
 slide: false
