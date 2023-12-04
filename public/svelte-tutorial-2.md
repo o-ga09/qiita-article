@@ -11,7 +11,7 @@ updated_at: ""
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 # はじめに
@@ -54,6 +54,12 @@ part 毎のソースコードをタグで作成しておりますので、part �
 # 第 2 回目
 
 ## カウンターアプリ
+
+### やること
+
+- Tailwind の導入
+- `<button on:click>`の使い方
+- Reactive な変数の使い方
 
 ### 想定作業時間
 
@@ -199,12 +205,14 @@ export default {
 
 上記のように、Svelte では、`<Button>`タグに`on:click`などの特別なプロパティ
 が最初からついています。
+
 また、カウントの変数も React のように`useState`のような特別な関数を使用しなくても、
 ただ、`let count = 1`でカウンターアプリを実装できてしまいます。
 
 :::note info
 
-今回の記事におけるポイントは、`<button on:click={}>`の使い方と、Svelte における状態を表す変数の使い方をマスターしました。
+今回の記事におけるポイントは、`<button on:click={}>`の使い方と、
+Svelte における状態を表す変数の使い方をマスターしました。
 
 :::
 
