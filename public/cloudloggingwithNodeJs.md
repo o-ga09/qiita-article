@@ -1,13 +1,13 @@
 ---
 title: TypescriptでCloud Loggingにログを出力する方法
 tags:
-  - cloudlogging
+  - Node.js
+  - TypeScript
   - googlecloud
-  - typescript
-  - nodejs
+  - CloudLogging
 private: false
-updated_at: ""
-id: null
+updated_at: '2023-12-06T08:05:39+09:00'
+id: bbda5cf22364e195ac76
 organization_url_name: null
 slide: false
 ignorePublish: false
